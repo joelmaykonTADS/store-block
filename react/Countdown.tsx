@@ -23,9 +23,10 @@ const Countdown: StorefrontFunctionComponent<CountdownProps> = ({
     tick(targetDate, setTime);
 
     return (
-      
+        <div className={`${handles.container} t-heading-2 fw3 w-100 pt7 pb6 c-muted-1 db tc`}>
             <div className={`${handles.countdown} db tc`}>
                 {`${timeRemaining.hours}:${timeRemaining.minutes}:${timeRemaining.seconds}`}
+            </div>
             </div>
     );
 };
